@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap');
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    overflow: hidden;
+}
+nav{
+    text-align: right;
+    background-color: skyblue;
+    padding: 10px 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#logo{
+    cursor: pointer;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+
+}
+ul{
+    display: inline-block;
+}
+li{
+    cursor: pointer;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0px 15px;
+    transition: 1s;
+}
+li:hover{
+    color: black;
+}
+#search{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    border-style: outset;
+}
+#create_page{
+    height: 100%;
+    width:100%;
+    z-index: 1;
+    position: absolute;
+    left: 100%;
+    padding: 50px;
+    transition: 1s;
+    background-color: rgba(0, 179, 255, 0.5);
+}
+form{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+#buttons_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#create_page input, #create_page button{
+    display: block;
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: white;
+}
+#create_page button{
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 1s;
+}
+#create_page button:hover{
+    color: black;
+    background-color: white;
+    border: none;
+}
+.main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    align-content: space-evenly;
+}
+.card{
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: burlywood;
+    border: 5px inset skyblue;
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-wrap: balance;
+    font-family: 'Raleway', serif;
+    font-weight: 100;
+    transition: 1s;
+}
+.keyword{
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.answer{
+    display: none;
+    font-size: 20px;
+    font-weight: 200;
+    text-wrap: balance;
+    color: white;
+    transition: 1s;
+}
+#back{
+    margin: 15px;
+    color: black;
+    background-color: white;
+}
+#back:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
